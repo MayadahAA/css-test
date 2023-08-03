@@ -166,30 +166,40 @@ text-align: center;
    }
    .left-side{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+    margin-top: 2em;
     
    }
    .shape-group-up{
-    grid-area: 1/1/3/3;
+   
+
    }
-   .small-shape{
-       width: 6em;
-       height: 4em;
+   .small-shape-1{
+       height: 100%;
        background-color: blue;
-       grid-area: 1/1/2/2;
+       grid-area: 2/1/3/2;
+
    }
+   .small-shape-2{
+    height: 100%;
+    background-color: blue;
+    grid-area: 2/2/3/2;
+
+}
    .large-shape{
        width: 20em;
        background-color: brown;
        height: 20vh;
-       
+       grid-area: 1/1/2/3;
+
    }
    .tall-shape{
-       width: 10em;
-       height: 10em;
        background-color: #504949;
+       grid-area: 3/1/4/3;
+
+
    }
    footer{
        display: flex;
