@@ -57,6 +57,8 @@ align-items: center;
 .button{
     background-color: blue;
     grid-area: 7/auto/8/auto;
+    color: aliceblue;
+    padding: 2em;
 
 }
 .left-side{
@@ -65,7 +67,12 @@ align-items: center;
 .shape-group-up{
 display: flex;
 }
-.small-shape{
+.small-shape-1{
+    width: 6em;
+    height: 4em;
+    background-color: blue;
+}
+.small-shape-2{
     width: 6em;
     height: 4em;
     background-color: blue;
@@ -92,14 +99,14 @@ footer{
 .right-footer{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 10vw;
 
 }
 .left-footer{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 10vw;
 
 
@@ -121,6 +128,7 @@ body{
        grid-template-columns: repeat(4, 1fr);
        grid-template-rows: repeat(4, 1fr);
        height: 100%;
+       width: 100%;
    }
    nav{
        grid-area: 1/1/1/5;
@@ -162,6 +170,7 @@ text-align: center;
    .button{
        background-color: blue;
        padding: 1em;
+       color: aliceblue;
    
    }
    .left-side{
@@ -201,30 +210,8 @@ text-align: center;
 
 
    }
-   footer{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-       align-items: center;
-       grid-area: 10/1/13/13;
-       background-color: #1d1d1d;
-       color: aliceblue;
+   footer,.right-footer,.left-footer{
+       visibility: hidden;
    }
-   .right-footer{
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       height: 10vw;
-   
-   }
-   .left-footer{
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       height: 10vw;
-   
-   
-   }
-   
    
    }
