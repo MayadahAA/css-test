@@ -152,27 +152,39 @@ body{
    }
    
    .right-side{
-     grid-area: 2/2/2/2;
-   }
+ display: flex; 
+ flex-direction: column;
+justify-content: space-between;
+gap: 2em;
+text-align: center;
+}
    /* r-s/c-s/r-e/c-e */
    .button{
        background-color: blue;
+       padding: 1em;
    
    }
    .left-side{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
     
    }
    .shape-group-up{
+    grid-area: 1/1/3/3;
    }
    .small-shape{
        width: 6em;
        height: 4em;
        background-color: blue;
+       grid-area: 1/1/2/2;
    }
    .large-shape{
        width: 20em;
        background-color: brown;
        height: 20vh;
+       
    }
    .tall-shape{
        width: 10em;
